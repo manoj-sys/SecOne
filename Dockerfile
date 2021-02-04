@@ -5,9 +5,9 @@ RUN python -m venv venv
 
 RUN apt update
 RUN apt install -y build-essential git quagga
-RUN /usr/bin/pip install matplotlib
+RUN pip install matplotlib
 RUN pip install pylint
-RUN /usr/bin/pip install coverage
+RUN pip install coverage
 
 RUN git clone https://github.com/HewlettPackard/netperf.git
 WORKDIR /netperf
