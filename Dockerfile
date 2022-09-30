@@ -14,6 +14,3 @@ RUN sh ./configure
 RUN make install
 WORKDIR /
 
-RUN mkdir -p  /run/quagga
-RUN chown quagga:quagga /run/quagga
-RUN rm -f /etc/quagga/daemons
